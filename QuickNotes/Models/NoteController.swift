@@ -11,7 +11,7 @@ import Foundation
 // Handle the interactions with the model
 class NoteController {
     
-    // CRUD
+    // CRUD - 
     
     //Create
     func createNote(with text: String){
@@ -36,6 +36,8 @@ class NoteController {
     // this is where you handle ANY implentation of our notes
     // this the source of data for the entire App
     // We are going to add notes to the array
+   
+    // Varible are at the bottom
     private(set) var notes: [Note] = []
     
 }

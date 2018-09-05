@@ -9,12 +9,14 @@
 import UIKit
 
 protocol NoteTableViewCellDelegate: class {
+    
     func shareNote(for cell: NoteTableViewCell)
 }
 
 class NoteTableViewCell: UITableViewCell {
-
+    
     // Create Action buttons shareNote
+    
     @IBAction func shareNote(_ sender: Any) {
     
         delegate?.shareNote(for: self)

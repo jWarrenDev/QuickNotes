@@ -20,7 +20,12 @@ class NotesTableViewController: UITableViewController, NoteTableViewCellDelegate
         present(activityController, animated: true, completion: nil)
     }
 
-
+    // Remove Keyboard when not being touched
+    override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
+        noteTextView.resignFirstResponder()
+        
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return noteController.notes.count
@@ -62,18 +67,16 @@ class NotesTableViewController: UITableViewController, NoteTableViewCellDelegate
 
     @IBOutlet weak var noteTextView: UITextView!
     
+    
     @IBAction func addNote(_ sender: Any) {
     
-    guard let text = noteTextView.text else { return }
+        guard let text = noteTextView.text else { return }
     
-    noteController.createNote(with: text)
+        noteController.createNote(with: text)
     
-    tableView.reloadData()
+        tableView.reloadData()
     
-    noteTextView.text = ""
-    
-    
-    
+        noteTextView.text = ""
     
     }
 }

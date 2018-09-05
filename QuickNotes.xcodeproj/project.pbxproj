@@ -62,15 +62,31 @@
 			children = (
 				C364CBFB2136FA750018FE3C /* AppDelegate.swift */,
 				C364CBFF2136FA750018FE3C /* Main.storyboard */,
-				C364CC0D213701510018FE3C /* NotesTableViewController.swift */,
-				C364CC0F2137027B0018FE3C /* NoteTableViewCell.swift */,
-				C3129F1021370655008458B3 /* note.swift */,
-				C3129F12213706B8008458B3 /* NoteController.swift */,
+				C3AFA098214051EB0013CA0A /* View Controllers */,
+				C3AFA097214051DB0013CA0A /* Models */,
 				C364CC022136FA790018FE3C /* Assets.xcassets */,
 				C364CC042136FA790018FE3C /* LaunchScreen.storyboard */,
 				C364CC072136FA790018FE3C /* Info.plist */,
 			);
 			path = QuickNotes;
+			sourceTree = "<group>";
+		};
+		C3AFA097214051DB0013CA0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3129F1021370655008458B3 /* note.swift */,
+				C3129F12213706B8008458B3 /* NoteController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3AFA098214051EB0013CA0A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C364CC0D213701510018FE3C /* NotesTableViewController.swift */,
+				C364CC0F2137027B0018FE3C /* NoteTableViewCell.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
